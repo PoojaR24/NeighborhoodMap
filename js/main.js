@@ -436,7 +436,6 @@ function getFourSquareData(marker) {
         clearTimeout(nearby_timeout);
         for (var i = 0; i < data.response.venues.length; i++) {
             nearBymarkers(data.response.venues[i]);
-            console.log(data.response.venues[i]);
         }
     });
 }
