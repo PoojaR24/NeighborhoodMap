@@ -20,14 +20,23 @@ The markers display the monuments and main attractions of various parts of India
 **References:**
 
 http://knockoutjs.com/documentation/binding-syntax.html
+
 http://knockoutjs.com/documentation/visible-binding.html
+
 http://knockoutjs.com/documentation/click-binding.html
+
 https://developer.mozilla.org/en-US/docs/Web/API/Window
+
 http://api.jquery.com/
+
 https://developers.google.com/maps/documentation/javascript/streetview
+
 www.w3schools.com
+
 stackoverflow: http://stackoverflow.com/
+
 udacity discussion forums: https://discussions.udacity.com/
+
 Udacity Lecture Video (Wikipedia API): https://youtu.be/bFDxyGsdL4o
 
 **Special Thanks To:**
