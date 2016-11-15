@@ -29,5 +29,7 @@ www.w3schools.com
 stackoverflow: http://stackoverflow.com/
 udacity discussion forums: https://discussions.udacity.com/
 Udacity Lecture Video (Wikipedia API): https://youtu.be/bFDxyGsdL4o
+
 **Special Thanks To:**
+
 Udacity 1:1 Mentor both during Appointment and in the forums. :)
