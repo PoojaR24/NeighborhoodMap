@@ -1,0 +1,52 @@
+<!doctype html>
+
+<head>
+    <title> Major Attractions of India</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/main.css">
+    <meta name="viewport" content="width=device-width, maximum-scale=1">
+</head>
+
+<body>
+    <main id="map-canvas"></main>
+    <aside id="search-container">
+        <div id="search-nav">
+            <!-- Search Bar -->
+            <input id="ip" placeholder="Filter Places" type="search" data-bind="textInput: query" autocomplete="off">
+            <!-- Search Nav Content-->
+            <div id="scroll">
+                <ul data-bind="template: {name: 'marker', foreach:markers}">
+                </ul>
+                <script type="text/html" id="marker">
+                    <div data-bind="visible: visible, click: $root.activateMarker">
+                        <!-- List of Content of each location-->
+                        <div href="#" data-bind="attr: {id: id}">
+                            <li>
+                                <b data-bind="text: title"></b>
+                                <br>
+                                <span id="text" data-bind="text: streetAddress"></span>
+                                <br>
+                                <span id="text" data-bind="text: cityAddress"></span>
+                            </li>
+                        </div>
+                    </div>
+                </script>
+            </div>
+        </div>
+    </aside>
+
+    <div id="arcontainer">
+        <img id="arrow" src="img/up.gif" alt="arrow image">
+    </div>
+
+    <div class="reset-container">
+        <button data-bind="click: showRestaurants" id="foursquare"> 4square Hotels </button>
+        <button data-bind="click: mapReset" id="reset">Reset Zoom</button>
+    </div>
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib/knockout-3.4.0.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBp0DptC-Nc7faTv_OCC5ncvmPV5llue4c&callback=initMap" onerror="googleError()" async defer></script>
+</body>
+
+</html>
